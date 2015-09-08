@@ -1,0 +1,19 @@
+<% @var = "dra con ian" %>
+<%= @var %>
+<br>
+
+<% @var2= @var.gsub(/\s/,"+") %>
+<%= @var2 %>
+<br>
+
+<% @var3 = @var2.gsub(/[+]/," ") %>
+<%= @var3 %>
+<br><br>
+
+<% @address = "경기 안양시 만안구 석수2동 278-1" %>
+<% @value1 = @address.gsub(/\s/,"+") %>
+<% @value2 = @value1.gsub(/[+]/," ") %>
+<%= @address %><br>
+<%= @value1 %><br>
+<%= @value2 %>
+
